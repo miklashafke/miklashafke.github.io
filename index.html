@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            padding: 15px 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #667eea;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #764ba2;
+        }
+
+        /* Main Content */
+        main {
+            background-color: white;
+            margin: 30px auto;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        section h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        /* Education */
+        .education-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .education-item h3 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .education-item .degree {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+
+        .education-item .year {
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        /* Research Projects */
+        .project {
+            margin-bottom: 30px;
+            padding: 25px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .project h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .project .meta {
+            color: #999;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        /* Awards */
+        .award {
+            display: flex;
+            align-items: start;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff9e6;
+            border-radius: 8px;
+            border-left: 4px solid #ffd700;
+        }
+
+        .award-icon {
+            font-size: 2em;
+            margin-right: 20px;
+        }
+
+        .award-content h3 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .award-content .year {
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+
+        .contact-links {
+            margin-top: 15px;
+        }
+
+        .contact-links a {
+            color: #667eea;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        .contact-links a:hover {
+            color: #764ba2;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            main {
+                padding: 20px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul li {
+                padding: 10px;
+            }
+
+            .award {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .award-icon {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Your Name</h1>
+            <p>Researcher | Academic | Innovator</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <main>
+            <!-- About Section -->
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Welcome! I am a [your field] researcher passionate about [your interests]. My work focuses on [brief description of your research focus]. This website showcases my academic journey, research contributions, and professional achievements.</p>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education">
+                <h2>Education</h2>
+                
+                <div class="education-item">
+                    <h3>University Name</h3>
+                    <div class="degree">Ph.D. in [Your Field]</div>
+                    <div class="year">2020 - Present</div>
+                    <p>Dissertation: [Your dissertation title]</p>
+                </div>
+
+                <div class="education-item">
+                    <h3>University Name</h3>
+                    <div class="degree">Master of Science in [Your Field]</div>
+                    <div class="year">2018 - 2020</div>
+                    <p>Thesis: [Your thesis title]</p>
+                </div>
+
+                <div class="education-item">
+                    <h3>University Name</h3>
+                    <div class="degree">Bachelor of Science in [Your Field]</div>
+                    <div class="year">2014 - 2018</div>
+                    <p>Graduated with Honors</p>
+                </div>
+            </section>
+
+            <!-- Research Projects Section -->
+            <section id="research">
+                <h2>Research Projects</h2>
+
+                <div class="project">
+                    <h3>Project Title 1</h3>
+                    <div class="meta">2023 - Present | Funded by [Funding Source]</div>
+                    <p>
+                        Description of your research project. Explain the objectives, methodology, 
+                        and significance of this work. Include any key findings or ongoing developments.
+                        What impact does this research have on your field?
+                    </p>
+                </div>
+
+                <div class="project">
+                    <h3>Project Title 2</h3>
+                    <div class="meta">2022 - 2023 | Collaborative project with [Institution]</div>
+                    <p>
+                        Description of your research project. Explain the objectives, methodology, 
+                        and significance of this work. Include any key findings or ongoing developments.
+                        What impact does this research have on your field?
+                    </p>
+                </div>
+
+                <div class="project">
+                    <h3>Project Title 3</h3>
+                    <div class="meta">2021 - 2022 | Independent Research</div>
+                    <p>
+                        Description of your research project. Explain the objectives, methodology, 
+                        and significance of this work. Include any key findings or ongoing developments.
+                        What impact does this research have on your field?
+                    </p>
+                </div>
+            </section>
+
+            <!-- Awards Section -->
+            <section id="awards">
+                <h2>Awards & Honors</h2>
+
+                <div class="award">
+                    <div class="award-icon">🏆</div>
+                    <div class="award-content">
+                        <h3>Award Name 1</h3>
+                        <div class="year">2023</div>
+                        <p>Description of the award and why you received it.</p>
+                    </div>
+                </div>
+
+                <div class="award">
+                    <div class="award-icon">🏆</div>
+                    <div class="award-content">
+                        <h3>Award Name 2</h3>
+                        <div class="year">2022</div>
+                        <p>Description of the award and why you received it.</p>
+                    </div>
+                </div>
+
+                <div class="award">
+                    <div class="award-icon">🏆</div>
+                    <div class="award-content">
+                        <h3>Award Name 3</h3>
+                        <div class="year">2021</div>
+                        <p>Description of the award and why you received it.</p>
+                    </div>
+                </div>
+
+                <div class="award">
+                    <div class="award-icon">🏆</div>
+                    <div class="award-content">
+                        <h3>Award Name 4</h3>
+                        <div class="year">2020</div>
+                        <p>Description of the award and why you received it.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <h3>Get In Touch</h3>
+            <p>Email: your.email@university.edu</p>
+            <div class="contact-links">
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+                <a href="https://scholar.google.com/yourprofile" target="_blank">Google Scholar</a>
+                <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a>
+            </div>
+            <p style="margin-top: 20px; opacity: 0.7;">&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
